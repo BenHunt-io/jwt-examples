@@ -16,7 +16,6 @@
     ],
     "author": "Ben Hunt",
     "license": "MIT",
-    "type": "module",
     "dependencies": {
         "http": "^0.0.1-security"
     }
