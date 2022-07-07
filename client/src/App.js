@@ -28,7 +28,7 @@ export class App extends React.Component {
 
     import('bootstrap-show-password-toggle/js/show-password-toggle.js');
 
-    fetch(new URL("http://localhost:4000/publicKey"))
+    fetch(new URL("http://localhost:4000/login/publicKey"))
       .then(res => res.json())
       .then(pubKey => {
         return window.crypto.subtle.importKey("jwk", pubKey, algo, false, ["encrypt"]);
