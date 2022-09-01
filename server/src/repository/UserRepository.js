@@ -16,8 +16,6 @@ class UserRepository {
             console.debug(`User created: ${JSON.stringify(user, null, 2)}`);
         }
     }
-    
-
 }
 
 module.exports = UserRepository;

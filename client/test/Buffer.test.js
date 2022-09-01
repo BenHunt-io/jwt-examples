@@ -580,3 +580,21 @@ test("Buffer test", () => {
         expect(decodedBuffer.byteLength).toBe(512);
         
 })
+
+
+test("Encode to binary", () => {
+
+    let binStringArr  = [];
+    for(let byte of Buffer.from('The brown fox jumps over the lazy dog').values()){
+        binStringArr.push(byte.toString('2'));
+    }
+
+    let binString = binStringArr.reduce((a, b) => a+b, "");
+
+    binStringArr = binStringArr.reduce((a, b) => a + " " + b, "");
+
+
+    console.log(binString);
+    console.log(binStringArr);
+
+}) 
